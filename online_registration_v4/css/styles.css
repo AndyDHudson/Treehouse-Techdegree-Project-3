@@ -17,7 +17,7 @@ body {
 /*---Layout Containers ------*/
 
 .container {
-    
+    max-width: 100%;
 }
 
 .header-container {
@@ -63,20 +63,10 @@ h2 {
     margin-top: 0; 
 }
 
- 
+.text-area  {
   
-.bottom-navbar ul {
-    
 }
-
-.bottom-navbar li {
-
 }
-
-
-.name {
-}
-
 
 /* FLOATS------------------*/
  /* CLEARFIX---------------*/

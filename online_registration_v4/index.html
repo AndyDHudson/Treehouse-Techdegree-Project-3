@@ -10,40 +10,54 @@
 </head>
 
     <div class="container">
-    <body>
-    <div="header-container">
-        <header class="main-header">
-            <h1>THE CODE REVIEW</h1> 
-            <h2>Sign up for our newsletter</h2>
-            <p>Get the latest news on how your code is doing right in your inbox.</p>
-        </header>
+        <body>
+            <div="header-container">
+                <header class="main-header">
+                    <h1>THE CODE REVIEW</h1> 
+                    <h2>Sign up for our newsletter</h2>
+                    <p>Get the latest news on how your code is doing right in your inbox.</p>
+                </header>
+            </div>
+            
+            <h2>Contact Information</h2>
+
+            <form class="text-area" action="index.html" method="post">
+                <label for="name">Full Name</label>
+                <input type="name" id="name" name="user_name"></input><br>
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="user_email"></inpt><br>
+
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="user_phone"></input>
+            </form>
+        
+            <h2>Newsletter</h2>    
+            <p>Select the newsletters you would like to receive.</p>
+
+            
+            <form>
+                <input type="checkbox" id="html-news" name="html-news">
+                <label for="html-news">HTML News<label><br>
+
+                <input type="checkbox" id="css-news" name="css-news">
+                <label for="css-news">CSS News<label><br>
+
+                <input type="checkbox" id="java-news" name="java-news">
+                <label for="java-news">Javascript News<label>
+                </form>
+            
+            <form>
+                <label>Newsletter Format<label>
+                <input type="radio" id="html" name="html"><label for="html">HTML</label><br>
+                <input type="radio" id="plain-text" name="plain text"><label for="plain-text">Plain Text</label><br>
+            </form>
+
+            <p>Other topics you'd like to hear about.</p>
+            <textarea id="other" name='other'></textarea>
+
+            <button type="submit">Sign Up</button>
+        </body>
+        <footer>Copyright The Code Review</footer>        
     </div>
-
-    <h2>Contact Information</h2>
-
-    <form action="index.html" method="post">
-        <label for="name">Full Name</label>
-        <input type="name" id="name" name="user_name"></input>
-
-        <label for="email">Email Address</label>
-        <input type="email" id="email" name="user_email"></inpt>
-
-        <label for="phone">Phone Number</label>
-        <input type="tel" id="phone" name="user_phone"></input>
-    </form>
-
-    <label for="">Newsletter Format</label>
-    <select id="format" name="css">Select the newsletter you would like to receive.</select>
-    <options value="html">HTML</options>
-    <options value="plain-text"></options>
-
-
-
-
-
-
-
-
-
-</body>
 </html>
