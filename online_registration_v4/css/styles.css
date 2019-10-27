@@ -17,22 +17,16 @@ body {
 /*---Layout Containers-------
 ===========================*/
 .container {
-    display: flex;
-    flex-direction: column;
-}
+  
 
-    margin: 0;
-    padding: 0;
 }
 
 .header-container {
-    text-align: center;
-    padding-top: 0px; 
-}
+
+   }
 
 .contact-container {
-    margin: 0px 10px 0px 10px;
-    border-top: solid black 2px;
+  
 }
 
 
@@ -47,52 +41,46 @@ body {
  /*---Page Elements----------
 ===========================*/
 h1 {
-    margin: 0;
-    padding: 20px 10px 40px 10px;
-    background-color: black;
-    color: white;  
-    font-size: 20px;
+  
 }
 
 .main-header h2 {
-    font-size: 20px;
-    
   
 }
 
 .main-header p {
-    margin-left: 10px;
-    margin-right: 10px;
-    padding-bottom: 30px;
-    border-bottom: solid black 5px;
+
 }
 
-.contact-container h2 {
+legend {
   
-    padding: 0;   
+}
+
+.contact-container input {
+
+}
+
+.contact-container h2 {  
+
 }
 
 .checkbox-container {
-    margin-left: 10px;
-    margin-right: 10px;
+   
 }
 
 .radio-container {
-    margin-left: 10px;
-    margin-right: 10px;
+    
 }
 
 .textarea-container {
-    margin-left: 10px;
-    margin-right: 10px;
-    text-align: center;
+ 
 }
 
 button {
-    text-align: center;
+
 }
 footer {
-    text-align: center;
+
 }
 
 
