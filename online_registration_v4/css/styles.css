@@ -14,6 +14,10 @@ body {
 
 /*---Layout Containers-------
 ===========================*/
+.container {
+
+}
+
 .contact-container {
 
 }
@@ -150,6 +154,14 @@ input:focus {
     box-shadow: 0 0 10px red;   
 }
 
+select:focus {
+    outline: none !important;
+    border:1px solid red;
+    box-shadow: 0 0 10px red; 
+}
+
+
+
 #text {
     width: 100%;
     height: 90px;
@@ -186,19 +198,88 @@ footer {
 ===========================*/
 .contact-container {
     display: flex;
-    display: column;
-
+    display: row;
+    flex-wrap: wrap;
+    margin-left: 25%;
+    margin-right: 25%;    
 }
+
 
 
  /*---Page Elements----------
 ===========================*/
-br {
-    display: none;
+
+h2 {
+    font-size: 22px;
+    margin: 25px 20px 0px 20px;    
+    padding: 0;    
 }
+
+p {
+    font-size: 14px;
+    margin: 10px 25% 0px 25%;
+    padding: 0px 0px 40px 0px;
+    border-bottom: solid 2px black;
+    font-weight: bold;
+    position: relative;
+    margin-bottom: 2px;
+}
+
+p:after {
+    content: '';
+    border-bottom: solid 4px black;
+    width: 100%;
+    position: absolute;
+    bottom: 3px;
+    left: 0;
+    }
+
+#contact {
+    width: 50%; 
+    margin: auto;
+}
+
+.contact-label {
+    margin-top: 25px;
+    width: 25%;
+    
+} 
+
+.required {
+    width: 75%;     
+}
+
+#state {
+    width: 75%;
+}
+
+#zip {
+    width: 40%;
+}
+
+.newsletter {
+    width: 50%; 
+    margin: auto;  
+}
+
+.textarea-container {
+    width: 50%; 
+    margin: auto;  
+}
+
+.sign-up {
+    display: block;
+    width: 50%;
+    margin-left: 25%; 
+    margin-right: 25%;
+}
+
+
 
 
 
 
 
  }
+
+ 
