@@ -14,20 +14,12 @@ body {
 
 /*---Layout Containers-------
 ===========================*/
-.container {
-
-}
-
-.contact-container {
-
-}
 
 .checkbox-container {
-
+    margin-bottom: 10px;
 }
-
 .radio-container {
-
+    margin-top: 10px;
 }
 
 
@@ -121,13 +113,6 @@ fieldset {
     border-top: black solid 2px;
 }
 
-.checkbox-container {
-    margin-bottom: 10px;
-}
-.radio-container {
-    margin-top: 10px;
-}
-
 .checkbox {
     margin-top: 10px;
     margin-bottom: 10px;   
@@ -159,8 +144,6 @@ select:focus {
     border:1px solid red;
     box-shadow: 0 0 10px red; 
 }
-
-
 
 #text {
     width: 100%;
@@ -198,13 +181,10 @@ footer {
 ===========================*/
 .contact-container {
     display: flex;
-    display: row;
     flex-wrap: wrap;
     margin-left: 25%;
     margin-right: 25%;    
 }
-
-
 
  /*---Page Elements----------
 ===========================*/
@@ -241,8 +221,7 @@ p:after {
 
 .contact-label {
     margin-top: 25px;
-    width: 25%;
-    
+    width: 25%;    
 } 
 
 .required {
@@ -257,7 +236,27 @@ p:after {
     width: 40%;
 }
 
-.newsletter {
+.newsletter-legend {
+    margin-left: 25%;
+    margin-right: 25%; 
+}
+
+.newsletter-legend-label {
+    margin-left: 25%;
+    margin-right: 25%; 
+}
+
+.format-legend {
+    margin-left: 25%;
+    margin-right: 25%;  
+}
+
+.radio-container {
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.checkbox-container {
     width: 50%; 
     margin: auto;  
 }
@@ -274,12 +273,6 @@ p:after {
     margin-right: 25%;
 }
 
-
-
-
-
-
-
- }
+}
 
  
