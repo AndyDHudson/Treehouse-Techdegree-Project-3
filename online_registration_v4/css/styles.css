@@ -1,5 +1,7 @@
 /*---Base Element Styles-----
 ===========================*/
+
+
 * {
     box-sizing: border-box;
 }
@@ -9,6 +11,7 @@ body {
     margin: 0;
     padding: 0;
     max-width: 100%;  
+    color: #292929;
 }
 
 
@@ -18,6 +21,7 @@ body {
 .checkbox-container {
     margin-bottom: 10px;
 }
+
 .radio-container {
     margin-top: 10px;
 }
@@ -25,6 +29,7 @@ body {
 
  /*---Page Elements----------
 ===========================*/
+
 .main-header {
         text-align: center;
         margin-bottom: 20px;
@@ -35,8 +40,8 @@ h1 {
     color: white;
     background-color: black;
     margin: 0;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     font-size: 20px;
 }
 
@@ -56,7 +61,6 @@ p {
     margin-bottom: 2px;
 }
 
-
 p:after {
     content: '';
     border-bottom: solid 4px black;
@@ -64,7 +68,7 @@ p:after {
     position: absolute;
     bottom: 3px;
     left: 0;
-    }
+}
 
 fieldset {
     border: none;
@@ -76,6 +80,8 @@ fieldset {
     text-align: left;
     width: 90%;
     margin: 10px 0px 10px 0px; 
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 .required {
@@ -87,6 +93,15 @@ fieldset {
     background-color: #edf4f5;
     text-align: right;
     padding-right: 20px;
+}
+
+.checkbox-container {
+    padding-bottom: 10px;
+
+}
+
+.radio-container {
+    padding-bottom: 20px;
 }
 
 #state {
@@ -109,7 +124,7 @@ fieldset {
     font-weight: bold;
     width: 100%;
     padding-top: 30px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     border-top: black solid 2px;
 }
 
@@ -129,40 +144,40 @@ textarea {
 
 textarea:focus { 
     outline: none !important;
-    border-color: red;
-    box-shadow: 0 0 10px red;      
+    border-color: blue;
+    box-shadow: 0 0 10px blue;      
 }
 
 input:focus { 
     outline: none !important;
-    border:1px solid red;
-    box-shadow: 0 0 10px red;   
+    border:1px solid blue;
+    box-shadow: 0 0 10px blue;   
 }
 
 select:focus {
     outline: none !important;
-    border:1px solid red;
-    box-shadow: 0 0 10px red; 
+    border:1px solid blue;
+    box-shadow: 0 0 10px blue; 
 }
 
 #text {
     width: 100%;
-    height: 90px;
+    height: 100px;
     background-color: #edf4f5;
     border: none;
-}
-
-.button {
-    margin-left: 15px;
-    margin-right: 15px;
+    margin-bottom: 20px;
 }
 
 .sign-up {
-    width: 100%;
-    height: 80px;
+    font-size: 20px;
+    text-align: center;
+    border: none;    
     font-weight: bold;
     color: white;
+    height: 70px;
     background-color: blue;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
 footer {
@@ -172,13 +187,16 @@ footer {
     padding-bottom: 200px;
 }
 
+
 /*---MEDIA QUERY----------------
 /* media query screen 768px---*/
 
  @media (min-width: 768px)  {
 
-/*---Layout Containers-------
+
+/*---Flexbox Container-------
 ===========================*/
+
 .contact-container {
     display: flex;
     flex-wrap: wrap;
@@ -186,18 +204,24 @@ footer {
     margin-right: 25%;    
 }
 
+
  /*---Page Elements----------
 ===========================*/
 
+h1 {
+    width: 100%;
+}
+
 h2 {
     font-size: 22px;
-    margin: 25px 20px 0px 20px;    
+    margin-left: 25%;
+    margin-right: 25%;    
     padding: 0;    
 }
 
 p {
     font-size: 14px;
-    margin: 10px 25% 0px 25%;
+    margin: 10px 25% 0px 25%;;  
     padding: 0px 0px 40px 0px;
     border-bottom: solid 2px black;
     font-weight: bold;
@@ -212,7 +236,7 @@ p:after {
     position: absolute;
     bottom: 3px;
     left: 0;
-    }
+}
 
 #contact {
     width: 50%; 
@@ -224,52 +248,46 @@ p:after {
     width: 25%;    
 } 
 
-.required {
-    width: 75%;     
-}
-
+.required,
 #state {
-    width: 75%;
-}
+    width: 75%;     
+ }
 
 #zip {
     width: 40%;
 }
 
 .newsletter-legend {
-    margin-left: 25%;
-    margin-right: 25%; 
+width: 50%;
+margin-left: 25%;
+margin-right: 25%;
 }
 
-.newsletter-legend-label {
-    margin-left: 25%;
-    margin-right: 25%; 
-}
-
+.radio-container,
+.format-legend,
+.format-legend,
+.newsletter-legend-label,
 .format-legend {
     margin-left: 25%;
-    margin-right: 25%;  
+    margin-right: 25%; 
 }
 
-.radio-container {
-    margin-left: 25%;
-    margin-right: 25%;
-}
-
-.checkbox-container {
-    width: 50%; 
-    margin: auto;  
-}
-
+.checkbox-container,
 .textarea-container {
     width: 50%; 
     margin: auto;  
 }
 
+#text {
+    width: 100%;
+    height: 80px;
+    background-color: #edf4f5;
+    border: none;
+}
+
 .sign-up {
-    display: block;
-    width: 50%;
-    margin-left: 25%; 
+    height: 50px;
+    margin-left: 25%;
     margin-right: 25%;
 }
 
