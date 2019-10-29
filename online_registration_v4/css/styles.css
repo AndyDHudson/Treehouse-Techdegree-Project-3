@@ -14,94 +14,83 @@ body {
 
 /*---Layout Containers-------
 ===========================*/
+.contact-container {
 
-.container {
-    margin: 0;
-    padding: 0;
 }
 
-.header-container {
-    text-align: center;
-  
+.checkbox-container {
+
 }
 
-.contact-container {   
-    margin-left: 10px;
-    margin-right: 10px; 
-    padding-bottom: 20px;   
-}
+.radio-container {
 
-.newsletter-container {
-    margin-left: 10px;
-    margin-right: 10px; 
-    padding-bottom: 20px;    
 }
 
 
  /*---Page Elements----------
 ===========================*/
-
 .main-header {
-    margin: 0;    
-}
+        text-align: center;
+        margin-bottom: 20px;
+        padding: 0;
+} 
 
-h1 {    
-    margin-top: 0;
+h1 {
     color: white;
-    font-size: 22px;
     background-color: black;
-    padding-top: 30px;
-    padding-bottom: 30px; 
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 20px;
 }
 
 h2 {
     font-size: 22px;
-    padding-top: 10px;
-    padding-bottom: 0px; 
-    margin-bottom: 10px;  
+    margin: 25px 20px 0px 20px;    
+    padding: 0;    
 }
 
-.header-container p {
-   margin: 0;
-   padding-bottom: 40px;
-   background-color: white;
-   margin-left: 10px;
-   margin-right: 10px;
-
-   border-bottom: black solid 5px;   
+p {
+    font-size: 14px;
+    margin: 10px 15px 0px 15px;  
+    padding: 0px 0px 40px 0px;
+    border-bottom: solid 2px black;
+    font-weight: bold;
+    position: relative;
+    margin-bottom: 2px;
 }
+
+
+p:after {
+    content: '';
+    border-bottom: solid 4px black;
+    width: 100%;
+    position: absolute;
+    bottom: 3px;
+    left: 0;
+    }
 
 fieldset {
-   border: none;
-   padding: 0;
-}
-
-.contact-container {
-    font-size: 16px;   
-    margin-top: 4px;   
+    border: none;
 }
 
 #contact {
-    font-size: 22px;
+    font-size: 20px;
     font-weight: bold;
-    width: 100%;  
-    padding-bottom: 30px;
-    border-top: black solid 2px;
+    text-align: left;
+    width: 90%;
+    margin: 10px 0px 10px 0px; 
 }
-.contact-container input {
+
+.required {
     width: 100%;
     height: 50px;
     margin-top: 10px;
     margin-bottom: 10px;
     border: none;
-    height: 80px;
     background-color: #edf4f5;
     text-align: right;
     padding-right: 20px;
-}
-
-#contact {
-    padding-top: 20px;
 }
 
 #state {
@@ -110,7 +99,6 @@ fieldset {
     margin-top: 10px;
     margin-bottom: 10px;
     border: none;
-    height: 80px;
     background-color: #edf4f5;
     text-align: right;
     padding-left: 10px;
@@ -120,7 +108,7 @@ fieldset {
     max-width: 50%;
 }
 
-.newsletter-container legend {
+.newsletter-legend {
     font-size: 22px;
     font-weight: bold;
     width: 100%;
@@ -129,10 +117,21 @@ fieldset {
     border-top: black solid 2px;
 }
 
-.newsletter-container input {
-    margin-top: 10px;
+.checkbox-container {
     margin-bottom: 10px;
-    color: blue;
+}
+.radio-container {
+    margin-top: 10px;
+}
+
+.checkbox {
+    margin-top: 10px;
+    margin-bottom: 10px;   
+}
+
+.radio {
+    margin-top: 10px;
+    margin-bottom: 10px;    
 }
 
 textarea {
@@ -148,39 +147,24 @@ textarea:focus {
 input:focus { 
     outline: none !important;
     border:1px solid red;
-    box-shadow: 0 0 10px red;
-   
-}
-
-.format-header {
-    margin-top: 10px;
-    margin-bottom: 10px; 
-    padding-top: 10px;
-}
-
-.checkbox-container {
-    padding-top: 10px;
-}
-
-.text-container {
-    margin-top: 20px;
+    box-shadow: 0 0 10px red;   
 }
 
 #text {
     width: 100%;
-    height: 80px;
+    height: 90px;
     background-color: #edf4f5;
     border: none;
 }
 
-.button-container {
+.button {
     margin-left: 15px;
     margin-right: 15px;
 }
 
 .sign-up {
     width: 100%;
-    height: 50px;
+    height: 80px;
     font-weight: bold;
     color: white;
     background-color: blue;
@@ -193,8 +177,6 @@ footer {
     padding-bottom: 200px;
 }
 
-
-
 /*---MEDIA QUERY----------------
 /* media query screen 768px---*/
 
@@ -202,76 +184,21 @@ footer {
 
 /*---Layout Containers-------
 ===========================*/
-.container {
-   
-}
-
 .contact-container {
-   display: flex;
-    
-}
-
-.newsletter-container {
-    margin: auto;
-   
- 
-}
-
-.checkbox-container {
+    display: flex;
+    display: column;
 
 }
 
-.radio-container {
-   
-}
 
-
-
-
-/*---Page Elements----------
+ /*---Page Elements----------
 ===========================*/
-#contact {
-    flex-direction: row;
-    align-items: center;
-   
+br {
+    display: none;
 }
 
 
 
 
-/*-FLOATS CLEARFIX-----------
-===========================*/
 
-
-
-
-/*---MEDIA QUERY----------------
-/* media query screen 1024px---*/
-
- @media (min-width: 1024px)  {
-
- 
-
-/*---Page Elements----------
-===========================*/
-
-
-
-
-
-/*-FLOATS CLEARFIX-----------
-===========================*/
-
-
-
-
-
-
-.clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
-  } 
-
-}
- 
+ }
